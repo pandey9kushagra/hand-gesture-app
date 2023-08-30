@@ -1,0 +1,28 @@
+body
+{
+  color: white;
+  background-image: linear-gradient(to bottom right, rgb(144, 55, 55), rgb(70, 153, 35), rgb(173, 82, 97), black);
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 4px ridge black;
+  width: 350px;
+  height: 300px; 
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+
+
+.heading{
+
+  letter-spacing: 4px;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10px;
+}

@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Hand gesture app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+      <h1 class="btn btn-info heading">
+        Hand Gesture app
+        <br>
+        <span>&#9996</span>
+        <span>&#128076</span>
+        <span>&#128077</span>
+        <span>&#9757</span>
+        <span>&#9994</span>
+        <span>&#128075</span>
+        <span>&#129311</span>
+      </h1>
+
+      <br><br>
+
+        <p style="font-size: 22px;">Take your selfie of a gesture to know about it's meaning
+      	<br>
+        <p style="color: rgba(255, 255, 255, 0.892);font-size: 20px;font-style: oblique;">On the following gestures the model is trained - </p>
+        <br>
+
+        <span>&#9996 |</span> 
+        <span>&#128076 |</span> 
+        <span>&#128077</span>
+      </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Camera view</label>
+        <div id="camera"></div>
+        <br><br>
+        <button class="btn btn-info" onclick="snapshot()">Capture image</button>
+      </div>
+      
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label style="font-size: 30px;background-color: rgb(35, 94, 140); border-radius: 10px;padding: 5px;
+        font-family: 'Times New Roman', Times, serif;">Prediction-</label>
+        <br><br>
+        <p  style="background-color: aliceblue;border-radius: 10px;padding: 10px;">
+        <span id="ename1" style="font-size: 25px; color: black;"></span>
+        <br>
+        <span id="emname1" style="font-size: 30px;"></span>
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Picture</label>
+        <div id="result"></div>
+        <br><br>
+        <button class="btn btn-info" onclick="check()">Predict sign</button>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+
